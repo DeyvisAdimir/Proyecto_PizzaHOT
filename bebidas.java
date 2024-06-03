@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class pizza_hut {
+public class bebidas {
     public static double calcularCostoTotal(String bebida) {
         double costoTotal = 0.0;
 
