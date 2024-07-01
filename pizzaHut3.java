@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.Random;
 import java.util.Scanner;
 
-public class pizzaHut3 {
+public class pizzaHut5 {
 
     private Scanner scanner = new Scanner(System.in);
     private Random random = new Random();
@@ -166,7 +166,7 @@ public class pizzaHut3 {
         carrito[opcion - 1] += cantidad;
 
         System.out.println("Ud ha pedido " + carrito[opcion - 1] + " de " + items[opcion - 1]);
-        System.out.println("¿Desea elegir otro menú más? 1. SI / 2. NO / 3. Menú Principal");
+        System.out.println("¿Desea elegir otro pizza más? 1. SI / 2. NO / 3. Menú Principal");
 
         opcion = scanner.nextInt();
         scanner.nextLine();
@@ -367,7 +367,7 @@ public class pizzaHut3 {
 
 
                 if (option == 1) {
-                    System.out.print("Ingrese una línea de texto: ");
+                    System.out.print("Ingrese su queja o suguerencia para mejorar el servicio: ");
                     String line = pumba.nextLine();
                     if (contadorlineas < lineas.length) {
                         lineas[contadorlineas] = line;
@@ -419,7 +419,7 @@ public class pizzaHut3 {
     }
 
     private boolean validarPagoVisa() {
-        // Validación simplificada para ejemplo.
+
         return numeroTarjeta != null && numeroTarjeta.length() == 16 &&
                 nombreTitular != null && !nombreTitular.isEmpty() &&
                 fechaExpiracion != null && fechaExpiracion.matches("\\d{2}/\\d{2}") &&
@@ -445,7 +445,7 @@ public class pizzaHut3 {
 
 
     public static void main(String[] args) {
-        pizzaHut3 pizzaHut = new pizzaHut3();
+        pizzaHut5 pizzaHut = new pizzaHut5();
         pizzaHut.mostrarMenuPrincipal();
     }
 }
